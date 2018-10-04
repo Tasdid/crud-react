@@ -1,1 +1,1 @@
-CRUD in React
+CRUD in React-Redux
