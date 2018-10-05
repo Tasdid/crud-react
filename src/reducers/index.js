@@ -1,6 +1,10 @@
-import {combineReducers} from 'redux'
-import contactReducer from './contactReducer'
+import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
+import PostsReducer from "./reducer_posts";
 
-export default combineReducers({
-    contact: contactReducer
-})
+const rootReducer = combineReducers({
+  posts: PostsReducer,
+  form: formReducer
+});
+
+export default rootReducer;
